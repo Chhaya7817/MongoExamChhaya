@@ -1,0 +1,27 @@
+:root{
+    --main-color:#0077b6;
+}
+
+
+main{
+    margin-top: 5.5rem;
+}
+
+
+.products .card img{
+    height: 190px;
+    padding: 10px;
+}
+
+.products .btn{
+    background-color: var(--main-color);
+    color:white;
+}
+
+.head{
+    background-color: rgba(240, 221, 12, 0.82);
+    height:15vh;
+    padding-left: 20px;
+    text-align: left;
+    margin-top:20px;
+}

@@ -1,0 +1,20 @@
+<% layout('layouts/boilerplate') -%>
+
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card shadow-sm mx-auto" style="width: 22rem;">
+            <div class="card-body">
+              <h5 class="card-title"><%= article.name %> </h5>
+              <p class="card-text"><%= article.desc %></p>
+              <h5 class="card-title">$ <%= article.price %> </h5>
+              <a href="/products" class="btn btn-info btn-sm">All Artcles</a>
+              <a href="/products/<%=article._id%>/edit" class="btn btn-info btn-sm">Edit</a>
+             
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <h1 class="display-6">Leave Your Review</h1>
+    </div>
+</div>

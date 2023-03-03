@@ -1,0 +1,24 @@
+<% layout('layouts/boilerplate') -%>
+
+
+<div class="row products">
+    <%for(let article of articles){%>
+        <div >
+            <div class="card text-left shadow-sm mx-auto" style="width: 100%">
+                <div class="card-body">
+                  <h5 class="card-title"><%= article.name %> </h5>
+                  <h5 class="card-title"><%= article.date %> </h5>
+                  <p class="card-text"><%= article.desc %>... </p>
+                  
+                  <div class="btns">
+                    <a href="/products/<%=article._id%>" class="btn btn-sm">Read More</a>
+                    <a href="/products/<%=article._id%>/edit" class="btn btn-info btn-sm">Edit</a>
+                    <form class="d-inline-block" action="/products/<%=article._id%>?_method=DELETE" method="POST">
+                    <button class="btn btn-sm btn-danger">Delete</button>
+                  </div>
+                  
+                </div>
+            </div>
+        </div>
+    <%}%>
+</div>
