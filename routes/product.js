@@ -46,7 +46,7 @@ router.get('/products/:id/edit', async (req, res) => {
 router.patch('/products/:id', async (req, res) => {
     
     const { id } = req.params;
-    const { name, price, desc } = req.body;
+    const { name, date, desc } = req.body;
 
     await Article.findByIdAndUpdate(id, { name, date, desc});
 
